@@ -175,21 +175,32 @@
     z-index: 5;
     opacity: 0.7;
     
-    @include tablet{
-     visibility: hidden;
-
-      display:none;
-      }
-      @include mobile{
-        visibility: hidden; 
-      display: none;
-      }
-    @include desktop{
+   @include desktop{
      margin-left: 2px ;
       content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#FAAD26" stroke-width="4"><path stroke-dasharray="3,7" d="M5 10 l095 0" stroke-linecap="round"/><circle cx="5" cy="9" r="3" fill="#FAAD26" /><circle cx="100" cy="9" r="3"  fill="#FAAD26" /></svg>');
       height: 6%;
       width: 16%;
     }
+    @include tablet{
+      display:block;
+      position: absolute;
+      padding-top: 13rem;
+      z-index: 5;
+      height: 0%;
+      width: 0%;
+      align-self: center;
+     margin-left: 42%;
+      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="12" r="4" fill="#333300" /><circle cx="10" cy="144" r="3"  fill="#FAAD26" /></svg>');
+      opacity: 1.0;
+    }
+    @include mobile{
+      position: absolute;
+        padding-top: 9.3rem;
+        z-index:5;
+      margin-left: 42%;
+        content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="7" r="4" fill="#333300" /><circle cx="10" cy="143" r="3"  fill="#FAAD26" /></svg>');
+        opacity: 1.0;
+      }
     
 }
 
@@ -202,22 +213,38 @@
     width: 22%;
     z-index: 5;
     opacity: 0.7;
-    @include tablet{
-      //content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="80%" width="80%" fill="none" stroke="#FAAD26" stroke-width="4"><path stroke-dasharray="6,7" d="M5 10 l110 0" stroke-linecap="round"/><circle cx="5" cy="9" r="3" fill="#FAAD26" /><circle cx="120" cy="9" r="3"  fill="#FAAD26" /></svg>');
-      display: none;
-      ;
-    }
-      @include mobile{
-        visibility: hidden; 
-      display: none;
-      }
+    
+      
     @include desktop{
       margin-left: 2px ;
        content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#FAAD26" stroke-width="4"><path stroke-dasharray="3,7" d="M5 10 l095 0" stroke-linecap="round"/><circle cx="5" cy="9" r="3" fill="#FAAD26" /><circle cx="100" cy="9" r="3"  fill="#FAAD26" /></svg>');
        height: 6%;
        width: 16%;
      }
-  
+     @include tablet{
+      display:block;
+      position: absolute;
+      padding-top: 13rem;
+      z-index: 5;
+      height: 0%;
+      width: 0%;
+      align-self: center;
+     margin-left: 42%;
+    
+      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="12" r="4" fill="#333300" /><circle cx="10" cy="144" r="3"  fill="#FAAD26" /></svg>');
+      opacity: 1.0;
+    }
+    
+     @include mobile{
+    
+     // display:inline-block;
+     position: absolute;
+     padding-top: 9.3rem;
+     z-index:5;
+   margin-left: 40%;
+      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="7" r="4" fill="#333300" /><circle cx="10" cy="143" r="3"  fill="#FAAD26" /></svg>');
+      opacity: 1.0;
+    }
 }
 .shipperbgHead{
   padding-left: 20%;
@@ -227,35 +254,13 @@
     padding-right: 2%;
   }
  @include tablet{
-  padding-left: 0px;
-   padding-right: 0px;
+ place-self: center;
+ padding-left: 0;
+   padding-right: 0%;
    //padding-top: 10px;
  }
 }
-.shipperbgHead::after{
-position: absolute;
-align-self:center;
-  @include tablet{
-    display:block;
-  align-self:center;
-    padding-top: 5.8rem;
-  
-    padding-left: 8%;
-    z-index: 5;
-    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="12" r="4" fill="#333300" /><circle cx="10" cy="144" r="3"  fill="#FAAD26" /></svg>');
-    
-  }
-  @include mobile{
-    display:block;
-      position: absolute;
 
-      padding-top: 2.5rem;
-      z-index:5;
-      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="7" r="4" fill="#333300" /><circle cx="10" cy="143" r="3"  fill="#FAAD26" /></svg>');
-    
-    }
-    
-}
 .driverbgHead{
   padding-left: 20%;
   @include desktop{
@@ -263,39 +268,12 @@ align-self:center;
    margin-right: 2px;
   }
   @include tablet{
-    padding-left: 0px;
+    place-self: center;
+    padding-left: 0%;
     padding-right: 0px;
   }
 }
-.driverbgHead::after{
-  position: absolute;
-  align-self:center;
-  @include tablet{
-    display:block;
-    position: absolute;
-    padding-top: 5.8rem;
-    padding-left: 8%;
-    z-index: 5;
-    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="12" r="4" fill="#333300" /><circle cx="10" cy="144" r="3"  fill="#FAAD26" /></svg>');
-    
-  }
-  @include mobile{
-    
-      display:block;
-      position: absolute;
 
-      padding-top: 2.5rem;
-      z-index:5;
-      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="3,7" d="M 10,10 V 150" stroke-linecap="round"/><circle cx="10" cy="7" r="4" fill="#333300" /><circle cx="10" cy="143" r="3"  fill="#FAAD26" /></svg>');
-    
-    }
-    @include mobile-xs{
-      padding-top: 5.5rem;
-      //content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" fill="none" stroke="#333300" stroke-width="5"><path stroke-dasharray="6,7" d="M 10,10 V 200" stroke-linecap="round"/><circle cx="10" cy="7" r="4" fill="#333300" /><circle cx="10" cy="143" r="3"  fill="#FAAD26" /></svg>');
-    
-    }
-  
-}
 .carrierbgHead{
   padding-left: 20px;
   @include desktop{
@@ -354,13 +332,20 @@ align-self:center;
   text-align: left;
 }
 .digi-img {
-  height: 505px;
-  width: 595px;
+  height: 100%;
+  width: 100%;
   margin-top: -30px;
-  margin-left: 20px;
+  @include desktop{
+    width: 380px;
+    height: 100%;
+  }
+  @include tablet{
+    width: 100%;
+    height: 100%;
+  }
   @include mobile {
-    height: 270px;
-    width: 300px;
+    height: auto;
+    width: 100%;
   }
 }
 
