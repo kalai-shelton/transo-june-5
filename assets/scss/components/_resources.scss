@@ -177,13 +177,27 @@ text-align: justify;
 //--------------Blogs-----------------//
 .ship-card img {
     height: 17.5rem;
+    @include desktop{
+     height: 12rem;   
+    }
+    @include tablet{
+        height: auto;
+    }
     @include mobile{
-        height: 10rem;
+    height: 10rem;
     }
 }
 .freight-card img{
     height: 17.5rem;
     width: 26.5rem;
+    @include desktop{
+        width: 17.5rem;
+       height: 12rem;   
+       }
+       @include tablet{
+           width: 100%;
+           height: auto;
+       }
     @include mobile{
         height: 10rem;
     } 
